@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="10dp"
+    android:id="@+id/parentview"
+    android:paddingRight="10dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="16dp" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="@string/starting_game"
+        android:textSize="20sp"
+        android:id="@+id/label1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#ff9800"
+        android:shadowColor="#ff2b0e16"
+         />
+
+    <ImageView
+        android:layout_below="@+id/label1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/diceImage"
+        android:src="@drawable/dice1"
+        android:layout_gravity="left" />
+
+    <LinearLayout
+        android:layout_below="@+id/diceImage"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout2">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rollbtn"
+            android:id="@+id/roll"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:focusable="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#ff52d5cb"
+            android:textColor="#fff9f6f6" />
+
+        <Button
+            android:background="#ffe5c600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/holdbtn"
+            android:id="@+id/hold"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:layout_alignTop="@+id/Roll"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ff2b1c0a" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resetbtn"
+            android:id="@+id/reset"
+            android:padding="5dp"
+            android:layout_alignTop="@+id/Hold"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#fff99ea5" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Your Turn..."
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:id="@+id/turnLabel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textColor="#eeff41" />
+
+</RelativeLayout>
