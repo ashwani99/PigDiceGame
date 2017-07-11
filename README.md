@@ -1,4 +1,4 @@
-##Pig Dice Game
+## Pig Dice Game
 
 A simple dice roling android game with visuals and sound.
 
