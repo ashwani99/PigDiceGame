@@ -9,7 +9,10 @@ Idea was inspired from [here](https://en.wikipedia.org/wiki/Pig_%28dice_game%29)
     <tr>
         <td><img src="/docs/screenshots/ss_1.png"></td>
         <td><img src="/docs/screenshots/ss_2.png"></td>
+    </tr>
+    <tr>
         <td><img src="/docs/screenshots/ss_3.png"></td>
+        <td><img src="/docs/screenshots/ss_4.png"></td>
     </tr>
 </table>
 
